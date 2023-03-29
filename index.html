@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0  ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- icon -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Pastry Shop</title>
+  <link rel='stylesheet' async type='text/css' media='screen' href='style.css'>
+  <script src="./pastries.js" async type="module"></script>
+  <script src="./script.js" async type="module"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+
+  <body>
+    <div class="container-fluid px-4 m-0">
+      <div class="w-100">
+        <!--Sign-Up Section-->
+        <section>
+          <div class="signup fixed-top px-2">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <p class="mb-0 phone pl-md-2">
+                  <a href="#" class="mr-2">
+                    <i class="fas fa-phone mr-1"></i>
+                    +55 61 0123 456
+                  </a>
+                  <a href="#"><i class="fas fa-paper-plane mr-1"></i>
+                    chizzysbakery@email.com
+                  </a>
+                </p>
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-end">
+                <div class="social-icon mr-4">
+                  <p class="mb-0 d-flex">
+                    <a href="#" class="d-flex align-items-center 
+                                justify-content-center">
+                      <i class="fab fa-facebook"></i></a>
+                    <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                      <i class="fab fa-instagram"></i></a>
+                    <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                      <i class="fab fa-twitter"></i></a>
+                  </p>
+                </div>
+                <div class="signup__reg">
+                  <button href="#" class="mr-2 mb-0">Sign-Up</button>
+                  <button href="#">Log In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End of Sign-Up Section-->
+
+
+        <!--Navbar Section-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light mb-2" aria-label="primary navigation">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img class="img-fluid store__logo" src="Images/Store Logo.png"
+                alt="bakery logo">
+              chizzy
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav ms-auto justify-content-around">
+                <li class="nav-item">
+                  <a class="nav-link active-link mx-3" aria-current="page" href="#" target="_self">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-3" href="#storeSection" target="_self" type="button">cake</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-3" href="#storeSection" target="_self">cupcake</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-3" href="#storeSection" target="_self">croissant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-3" href="#storeSection" target="_self">doughnut</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="wishlist-cart d-flex">
+              <div class="nav--wishlist mx-2">
+                <a class="nav-link mx-1 wishlist" href="/wishlist.html" target="_blank">
+                  <i class="fa fa-heart wishlist__icon" aria-hidden="true"></i>
+                  <div class="wishlist__count" value="0">0</div>
+                </a>
+              </div>
+              <div class="nav--cart mx-2">
+                <a class="nav-link mx-1 shoppingcart" href="/cart.html" target="_blank">
+                  <i class="fas fa-shopping-cart shoppingcart__icon"></i>
+                  <div class="cart__count" value="0">0</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!--End of Navbar Section-->
+
+        <!---Hero Section-->
+        <section>
+          <header class="hero d-flex flex-column justify-content-center align-items-center">
+            <h2 class="hero__quote">Welcome to Chizzy's bakery</h2>
+            <!-- <button type="button" class="btn hero__explore">Explore</button> -->
+            <a href="#storeSection" class="btn btn-default shop__pastry" type="button">Shop Pastry</a>
+          </header>
+        </section>
+        <!---End of Hero Section-->
+
+        <!--About Section-->
+        <Section class="Aboutus py-5">
+          <div class="p-0">
+            <div class="row">
+              <div class="aboutus col-md-6 pt-4">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+                  pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas
+                  imperdiet felis nisi, fringilla luctus felis hendrerit sit amet.</p>
+                <a type="button" class="btn welcome__explore" href="#storeSection">Shop Pastry</a>
+              </div>
+              <div class="aboutus__img col-md-6 pt-4">
+                <img class="img-fluid h-80 w-100"
+                  src="Images/About Us_Img.jpg"
+                  alt="Pastry display">
+              </div>
+            </div>
+          </div>
+        </Section>
+        <!---End of About Section-->
+
+        <Section class="storeSection " id="storeSection">
+          <header class="shopitems__header d-flex flex-column justify-content-center align-items-center">
+            <h3>Shop Pastry</h3>
+          </header>
+
+          <div class="mt-4 p-0">
+            <!-- filter-navbar Section-->
+            <div class="mt-4 mb-2 searchbar">
+              <form class="d-flex justify-content-center" id="search__pastry" role="search">
+                <input class="form-control me-2  search__input" type="search" placeholder="search item"
+                  aria-label="Search">
+                <button class="btn btn-outline-success search__button" id="search__button" type="button">Search</button>
+              </form>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light mb-2" aria-label="primary navigation">
+              <div class="container-fluid">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+             </button> -->
+
+                <div class="collapse navbar-collapse pastry__Section" id="navbarNavAltMarkup">
+                  <div
+                    class="secondary__navigation navbar-nav col-md-4 col-lg-12 mx-auto mx-auto d-flex flex-row justify-content-evenly align-items-center p-0"
+                    aria-label="secondary navigation">
+                    <button
+                      class="nav-item nav-link border border-secondary rounded w-auto btn mx-3 text-uppercase pastry__link active-link"
+                      aria-current="page" href="">all</button>
+                    <button
+                      class="nav-item nav-link border border-secondary rounded w-auto btn mx-3 text-uppercase pastry__link"
+                      href="">cakes</button>
+                    <button
+                      class="nav-item nav-link border border-secondary rounded w-auto btn mx-3 text-uppercase pastry__link"
+                      href="">cupcakes</button>
+                    <button
+                      class="nav-item nav-link border border-secondary rounded w-auto btn mx-3 text-uppercase pastry__link"
+                      href="">croissants</button>
+                    <button
+                      class="nav-item nav-link border border-secondary rounded w-auto btn mx-3 text-uppercase pastry__link"
+                      href="">doughnuts</button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- end of filter-navbar Section -->
+
+            <!---Store Section-->
+            <!-- pastry items in  grid -->
+            <section class="store mt-4 text-centerp-0">
+              <div class="row store__items">
+                <!-- render pastry items here -->
+                <template data-items-template>
+                  <div class="pastry__cards col-md-4">
+                    <div class="img-container h-75  w-100 d-flex flex-column">
+                      <img class="pastry__image img-fluid h-100 store__img" src="" alt="">
+                      <span class="store__wishlist">
+                        <i class="fa fa-heart pastry__addwishlist" aria-hidden="true"></i>
+                      </span>
+                      <span class="store__cart">
+                        <i class="fas fa-shopping-cart pastry__addcart"></i>
+                      </span>
+                    </div>
+                    <div class="pastry__properties row text-center mx-2">
+                      <div class="d-flex justify-content-center p-0">
+                        <p class="pastry__description m-0 py-1"></p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <large class="pastry__product col-md-6 w-25"></large>
+                        <large class="pastry__price prices col-md-6 w-auto"><strong></strong></large>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </section>
+        </section>
+
+      </div>
+      <!--- End of Store Section-->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+      </script>
+  </body>
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/323ea4c454.js" crossorigin="anonymous"></script>
+
+</html>

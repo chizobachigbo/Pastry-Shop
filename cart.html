@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- icon -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Pastry Shop</title>
+  <link rel='stylesheet' async type='text/css' media='screen' href='style.css'>
+  <link rel='stylesheet' async type='text/css' media='screen' href='cart.css'>
+  <script src="./cart.js" async type="module"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fluid  container--wrapper px-4 m-0">
+    <div class="w-100">
+      <!--Sign-Up Section-->
+      <section>
+        <div class="signup px-2">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+              <p class="mb-0 phone pl-md-2">
+                <a href="#" class="mr-2">
+                  <i class="fas fa-phone mr-1"></i>
+                  +55 61 0123 456
+                </a>
+                <a href="#"><i class="fas fa-paper-plane mr-1"></i>
+                  chizzysbakery@email.com
+                </a>
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end">
+              <div class="social-icon mr-4">
+                <p class="mb-0 d-flex">
+                  <a href="#" class="d-flex align-items-center 
+                                justify-content-center">
+                    <i class="fab fa-facebook"></i></a>
+                  <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                    <i class="fab fa-instagram"></i></a>
+                  <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                    <i class="fab fa-twitter"></i></a>
+                </p>
+              </div>
+              <div class="signup__reg">
+                <button href="#" class="mr-2 mb-0">Sign-Up</button>
+                <button href="#">Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of Sign-Up Section-->
+
+
+      <!--Navbar Section-->
+      <nav class="navbar navbar-expand-lg navbar-light mb=2" aria-label="primary navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img class="img-fluid store__logo" src="Images/Store Logo.png"
+              alt="chocolate cake with cherries">
+            chizzy
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link active-link mx-3" aria-current="page" href="/cart.html" target="_self">Cart</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="wishlist-cart d-flex">
+            <div class="nav--wishlist mx-2">
+              <a class="nav-link mx-1 wishlist" href="/wishlist.html" target="_blank">
+                <i class="fa fa-heart wishlist__icon" aria-hidden="true"></i>
+                <div class="wishlist__count">0</div>
+              </a>
+            </div>
+            <div class="nav--cart mx-2">
+              <a class="nav-link mx-1 shoppingcart" href="/cart.html" target="_blank">
+                <i class="fas fa-shopping-cart shoppingcart__icon"></i>
+                <div class="cart__count">0</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of Navbar Section-->
+      <section class="carthero mt-5 pt-4">
+        <div class="carthero--container">
+          <h1 class="cart__hero">Shopping Cart</h1>
+        </div>
+      </section>
+      <!---End of Hero Section-->
+
+      <!--Cart Section-->
+      <section class="cartSection mt-5">
+        <div class="shopping-cart px-4">
+          <div class="cart--rows">
+            <template cart-items-template>
+              <div class="cart mb-3 me-4">
+                <div class="cart__image">
+                  <img class="pastry__image cart__photo"
+                    src="https://images.unsplash.com/photo-1579761314336-f27ea6297ae1?ixdivb=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+                </div>
+                <div class="cart__items">
+                  <div class="cart__details px-3">
+                    <div class="cart__description">
+                      <p class="pastry__description cart__des"></p>
+                    </div>
+                    <div class="cart__product pt-1">
+                      <p class="pastry__product cart__name"></p>
+                    </div>
+                    <div class="cart__price pt-2">
+                      <p class="pastry__price product__price prices"></p>
+                    </div>
+                  </div>
+                  <div class="cart__quantity">
+                    <div class="total--price px-2">
+                      <p class="font--large total__price prices"></p>
+                    </div>
+                    <div class="cart__counter px-2 pt-3">
+                      <i class="fas fa-angle-down item__quantity item__decrease"></i><!--
+                    --><input class="cart__input" type="text" value="1" min="0" max="100"><!--
+                    --><i class="fas fa-angle-up item__quantity item__increase"></i>
+                    </div>
+                    <div class="delete-wishlist px-2 pt-3">
+                      <div class="cart__delete px-2">
+                        <i class="fa fa-trash cart__trash" aria-hidden="true"></i>
+                      </div>
+                      <div class="cart__wish px-2">
+                        <i class="fa fa-heart cart__wishlist px-2" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="cart__empty">
+            <h5>There are no items in your cart</h5>
+            <a href="/index.html#storeSection" class="btn btn-default shop__pastry mt-2" type="button">Shop Pastry</a>
+          </div>
+
+
+          <!--  -->
+          <div class="payment__checkout">
+            <div class="checkout">
+              <div class=" checkout__card ">
+                <div class="cart--subtotal card--body p-2">subtotal
+                  <span class="cart__subtotal prices">0</span>
+                </div>
+                <div class=" cart--grandtotal card--body p-2">Grand Total
+                  <span class="cart__total cart__grandtotal prices">0</span>
+                </div>
+              </div>
+              <a href="#" class="checkout__btn">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdedivvr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/323ea4c454.js" crossorigin="anonymous"></script>
+
+</html>
