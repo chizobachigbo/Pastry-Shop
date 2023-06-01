@@ -4,13 +4,16 @@ html {
 }
 
 body {
-  --pink-accent: rgb(245, 72, 127);
-  --yellow-accent: rgb(237, 138, 10);
+  --pink-accent: #e01e5a;
+  --yellow-accent: #c78600;
   --dark-accent: rgb(29, 26, 5);
   --text-color: rgb(242, 245, 255);
+  /* --text-color: #00000; */
   --neutral: rgb(135, 142, 136);
   --error: rgb(208, 0, 0);
-  --dark-mode: rgb(0, 16, 11);
+  --dark-mode: #181A1B;
+  --light-mode: #fffff;
+
 
   margin: 0;
   padding: 0;
@@ -130,13 +133,12 @@ p {
   }
 
   .wishlist__container {
-    background: var(--dark-accent);
+    background: var(--dark-mode);
     border-radius: 10px;
     margin-top: 0.5rem;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    display: grid;
-    grid-template-columns: 7em 17em 6em 6em 2.5em 2.5em;
+    display: flex;
     overflow-wrap: break-word;
   }
 
@@ -155,18 +157,13 @@ p {
 }
 
 @media (width <= 600px) {
-  .wishlist__container {
-    display: flex;
-    overflow-wrap: break-word;
-  }
-
   .wishlist--rows {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media (width <= 390px) {
+@media (width <= 500px) {
   .wishlist__container {
     display: grid;
     grid-template-columns: 5em 8em 5em 2em 2em;

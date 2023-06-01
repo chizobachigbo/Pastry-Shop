@@ -19,13 +19,17 @@ html {
 }
 
 body {
-  --pink-accent: rgb(245, 72, 127);
-  --yellow-accent: rgb(237, 138, 10);
+  --pink-accent: #e01e5a;
+  --yellow-accent: #ecb22e;
   --dark-accent: rgb(29, 26, 5);
   --text-color: rgb(242, 245, 255);
+  /* --text-color: #00000; */
   --neutral: rgb(135, 142, 136);
   --error: rgb(208, 0, 0);
-  --dark-mode: rgb(0, 16, 11);
+  --dark-mode: #181A1B;
+  --light-mode: #fffff;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+
 
   margin: 0;
   padding: 0;
@@ -167,7 +171,7 @@ p {
 }
 
 .sticky-top {
-  background-color: var(--dark-accent);
+  background-color: var(--dark-mode);
   /* border-bottom: 1px solid var(--neutral); */
 }
 
@@ -328,7 +332,7 @@ p {
 
 .search__button {
   color: var(--yellow-accent);
-  border-color: var(--yellow-accent);
+  border-color: 2px solid var(--yellow-accent);
 }
 
 .search__button:hover {
@@ -337,10 +341,10 @@ p {
 }
 
 .search__input {
-  background-color: var(--dark-accent);
+  background-color: var(--light-mode);
   color: var(--text-color);
-  border-color: var(--neutral);
-  border: 1px solid;
+  border-color: var(--dark-accent);
+  border: 2px solid;
   width: 300px;
 }
 
